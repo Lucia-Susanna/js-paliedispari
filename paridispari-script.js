@@ -13,14 +13,14 @@
 let userNumber = parseInt(prompt('Inserisci un numero da 1 a 5:'));
 
 while (userNumber>5 || userNumber<1){
-  userNumber = prompt('Inserisci un numero da 1 a 5:');
+  userNumber = parseInt(prompt('Inserisci un numero da 1 a 5:'));
 }
 
 let userChoice = prompt('Inserisci la tua giocata (PARI o DISPARI):').toUpperCase();
 
 
 while ((userChoice !== 'PARI') && (userChoice !== 'DISPARI')){
-  userChoice = prompt('Inserisci la tua giocata (PARI o DISPARI):');
+  userChoice = prompt('Inserisci la tua giocata (PARI o DISPARI):').toUpperCase();
 }
 
 let pcNumber = parseInt(randomNumber(5));
